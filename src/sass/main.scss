@@ -9,6 +9,9 @@
 @import './base.scss';
 
 @import './helpers/visually-hidden.scss';
+@import './helpers/placeholder.scss';
+@import './helpers/placeholder-title.scss';
+@import './helpers/placeholder-main-text.scss';
 
 
 /* Components */
@@ -21,5 +24,5 @@
 // @import './components/section-2.scss';
 @import './components/section-3.scss';
 // @import './components/section-4.scss';
-// @import './components/section-5.scss';
-// @import './components/footer.scss';
+@import './components/section-5.scss';
+@import './components/footer.scss';
