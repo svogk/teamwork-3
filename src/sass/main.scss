@@ -4,6 +4,7 @@
 @import './components/fonts.scss';
 @import './helpers/variables.scss';
 @import './helpers/mixins.scss';
+@import './helpers/placeholder_selector.scss';
 @import './normalize.scss';
 @import './base.scss';
 
@@ -15,7 +16,10 @@
 
 /* Components */
 @import './components/container.scss';
-// @import './components/header.scss';
+@import './components/header.scss';
+@import './components/header-form.scss';
+@import './components/header-768px.scss';
+@import './components/header-1200px.scss';
 @import './components/section-1.scss';
 // @import './components/section-2.scss';
 @import './components/section-3.scss';
