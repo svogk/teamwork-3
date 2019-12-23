@@ -1,0 +1,20 @@
+%main-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-color-text;
+  font-family: $font-MontserratAlternates-Regular;
+}
+
+@media (min-width: 768px) {
+  %main-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  %main-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
