@@ -1,0 +1,77 @@
+.page-header__bg {
+  width: 100%;
+  background-image: url(../images/bg-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background-color-header;
+}
+
+.page-header {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.site-logo {
+  padding-top: 26px;
+  margin-bottom: 27px;
+
+  img {
+    display: block;
+  }
+}
+
+.page-header__title {
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 18px;
+  color: $color-text-white;
+  font-family: $font-MontserratAlternates-Regular;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.page-header__descr {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 26px;
+  color: $color-text_background;
+  font-family: $font-MontserratAlternates-ExtraBold;
+  font-weight: 800;
+  margin-bottom: 23px;
+}
+
+.page-header__meeting {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-white;
+  font-family: $font-MontserratAlternates-Medium;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.page-header__privacy {
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 0px;
+  color: $color-text-meet;
+  font-family: $font-MontserratAlternates-ExtraBold;
+
+  span {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 800;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page-header__bg {
+    width: 100%;
+    background-image: url(../images/bg-header@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-color-header;
+  }
+}
