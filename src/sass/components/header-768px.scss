@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+  .page-header {
+    width: 620px;
+  }
+
+  .site-logo {
+    padding-top: 40px;
+    margin-bottom: 34px;
+  }
+
+  .page-header__info {
+    width: 576px;
+    margin-bottom: 12px;
+  }
+
+  .page-header__title {
+    margin-bottom: 46px;
+  }
+
+  .page-header__descr {
+    font-size: 40px;
+    letter-spacing: -2px;
+    line-height: 50px;
+    margin-bottom: 31px;
+  }
+
+  .page-header__meeting {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .page-header__privacy {
+    font-size: 18px;
+
+    span {
+      font-size: 40px;
+      letter-spacing: -2px;
+      line-height: 75px;
+    }
+  }
+
+  .form,
+  .form-container {
+    width: 620px;
+  }
+
+  .form__item {
+    width: 492px;
+    text-align: center;
+
+    * {
+      margin-left: 0;
+    }
+
+    input,
+    button {
+      width: 467px;
+    }
+
+    button {
+      margin-bottom: 41px;
+    }
+
+  }
+
+  .form__title {
+    width: 364px;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto 24px;
+    padding-top: 37px;
+  }
+
+  .form__text {
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  input:nth-child(5) {
+    margin-bottom: 27px;
+  }
+
+
+  .form__btm {
+    padding-bottom: 24px;
+  }
+}
