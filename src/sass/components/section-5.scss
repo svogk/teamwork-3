@@ -1,0 +1,512 @@
+.about {
+  padding-top: 34px;
+  padding-bottom: 40px;
+
+  &__title {
+    width: 180px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: $secondary-color-text;
+    font-family: $font-MontserratAlternates-Bold;
+    margin-left: 33px;
+    margin-bottom: 32px;
+  }
+}
+
+.awards {
+  &__title {
+    width: 108px;
+    height: 21px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $primary-color-text;
+    font-family: $font-MontserratAlternates-Bold;
+    background-color: $background-color-grey;
+    margin-bottom: 25px;
+    margin-left: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+.award__item-wrapper {
+  position: relative;
+  z-index: 0;
+  margin: 0px auto 62px;
+}
+
+.award__item-number {
+  position: absolute;
+  font-size: 70px;
+  color: $background-color-grey;
+  margin: 0;
+  font-family: $font-Montserrat-Bold;
+  font-weight: 700;
+  top: -52px;
+  right: -1px;
+}
+
+.award__item {
+  width: 225px;
+  filter: drop-shadow(0px 15px 16px rgba(0, 0, 0, 0.16));
+  background-color: $color-text-white;
+  padding: 36px 24px 28px 24px;
+  position: relative;
+  box-shadow: -20px 18px 0px 0px rgba(0, 0, 0, 0.02);
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: $color-text_background;
+    top: 24px;
+    left: -14px;
+  }
+}
+
+.award__name {
+  font-size: 18px;
+  line-height: 26px;
+  color: $dark-color-text;
+  font-family: $font-MontserratAlternates-ExtraBold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.award__descr {
+  font-size: 14px;
+  line-height: 21px;
+  color: $dark-color-text;
+  font-family: $font-MontserratAlternates-Regular;
+  margin-bottom: 20px;
+}
+
+.award__img {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(-5px 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.go-for-it {
+  position: relative;
+  width: 225px;
+  margin: 0 auto;
+
+  &__title {
+    width: 96px;
+    height: 21px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $primary-color-text;
+    font-family: $font-MontserratAlternates-Bold;
+    background-color: $background-color-grey;
+    margin-bottom: 38px;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 150px;
+    height: 130px;
+    background: url('../images/world.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -3px;
+    left: 35px;
+    z-index: -1;
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 30px;
+    color: $dark-color-text;
+    font-family: $font-MontserratAlternates-ExtraBold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-color-text;
+    font-family: $font-MontserratAlternates-Regular;
+    margin-bottom: 40px;
+  }
+}
+
+.partners {
+  &__title {
+    width: 106px;
+    height: 21px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $primary-color-text;
+    font-family: $font-MontserratAlternates-Bold;
+    background-color: $background-color-grey;
+    margin-bottom: 25px;
+    margin-left: 35px;
+  }
+
+  &__list {
+    width: 240px;
+    height: 310px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__title {
+      width: 420px;
+      font-size: 30px;
+      line-height: 40px;
+      margin-left: 60px;
+      margin-bottom: 32px;
+    }
+
+    &__title--line1{
+      display: block;
+      width: 225px;
+    }
+
+    &__title--line2{
+      display: block;
+      width: 510px;
+    }
+  }
+
+  .awards {
+    &__title {
+      margin-bottom: 35px;
+      margin-left: 60px;
+    }
+
+    &__list {
+      width: 716px;
+      justify-content: space-between;
+    }
+  }
+
+  .award__item-wrapper {
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .award__item {
+    height: 465px;
+    padding: 36px 24px 0px 24px;
+    position: relative;
+  }
+
+  .award__name {
+    margin-bottom: 15px;
+  }
+
+  .award__descr {
+    margin-bottom: 0px;
+  }
+
+  .award__img--1 {
+    margin-top: 100px;
+  }
+
+  .award__img--3 {
+    margin-top: 5px;
+  }
+
+  .go-for-it {
+    position: relative;
+    width: 376px;
+    margin: 0 auto;
+
+    &__title {
+    }
+
+    &::before {
+      top: -3px;
+      left: 210px;
+    }
+
+    &__name {
+      width: 330px;
+    }
+  }
+
+  .partners {
+    &__title {
+      margin-left: 60px;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+  }
+
+  .partners__list {
+    width: 655px;
+    height: 160px;
+    margin-left: 60px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: center;
+  }
+
+  .partners__item--1 {
+    order: 1;
+  }
+
+  .partners__item--2 {
+    order: 2;
+  }
+
+  .partners__item--3 {
+    order: 4;
+  }
+
+  .partners__item--4 {
+    order: 3;
+  }
+
+  .partners__item--5 {
+    order: 9;
+  }
+
+  .partners__item--6 {
+    order: 5;
+  }
+
+  .partners__item--7 {
+    order: 6;
+  }
+
+  .partners__item--8 {
+    order: 8;
+  }
+
+  .partners__item--9 {
+    order: 7;
+  }
+
+  .partners__item--10 {
+    order: 10;
+  }
+
+  .partners__item--11 {
+    order: 14;
+  }
+
+  .partners__item--12 {
+    order: 13;
+  }
+
+  .partners__item--13 {
+    order: 15;
+  }
+
+  .partners__item--14 {
+    order: 16;
+  }
+
+  .partners__item--15 {
+    order: 11;
+  }
+
+  .partners__item--16 {
+    order: 12;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 100px 15px 120px 15px;
+
+    &__title {
+      width: 585px;
+      font-size: 48px;
+      letter-spacing: -2px;
+      line-height: 60px;
+      margin: 0;
+      margin-bottom: 65px;
+    }
+
+    &__title--line1{
+      display: inline;      
+    }
+
+    &__title--line2{
+      display: inline;
+    }
+  }
+
+  .about__sections {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .awards {
+    width: 1140px;
+    margin: 0;
+    order: 2;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      width: 1140px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .award__item-number {
+    font-size: 30px;
+    line-height: 21px;
+    transform: rotate(270deg);
+    top: -40px;
+    right: 0px;
+    font-family: $font-MontserratAlternates-Bold;
+  }
+
+  .award__item-wrapper {
+    margin: 0px;
+    padding: 0;
+  }
+
+  .award__item--1,
+  .award__item--3 {
+    width: 390px;
+  }
+
+  .award__item--2 {
+    width: 360px;
+  }
+
+  .award__item {
+    margin: 0;
+    padding: 0;
+    background: none;
+    position: relative;
+    box-shadow: none;
+    filter: none;
+    height: 245px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .award__name {
+    font-size: 24px;
+    line-height: 30px;
+    width: 165px;
+    margin-bottom: 15px;
+  }
+
+  .award__name--3 {
+    width: 200px;
+  }
+
+  .award__descr {
+    width: 225px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .award__descr--2 {
+    width: 195px;
+  }
+
+  .award__descr--3 {
+    width: 240px;
+  }
+
+  .award__img {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
+
+  .award__img--1 {
+    top: 15px;
+    right: 48px;
+  }
+
+  .award__img--2 {
+    top: -30px;
+    right: 70px;
+  }
+
+  .award__img--3 {
+    top: 10px;
+    right: 20px;
+  }
+
+  .go-for-it {
+    margin: 0;
+    position: relative;
+    width: 380px;
+    margin-bottom: 52px;
+
+    &__title {
+      margin-bottom: 45px;
+    }
+
+    &::before {
+      top: -3px;
+      left: 210px;
+    }
+
+    &__name {
+      width: 330px;
+    }
+  }
+
+  .partners {
+    width: 652px;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      margin: 0;
+      width: 655px;
+      height: 160px;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .go-for-it::before {
+    background: url('../images/world@2x.png');    
+  }
+}
