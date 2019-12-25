@@ -3,15 +3,16 @@
   padding: 0;
 }
 
+.interest-offer.container {
+  width: 260px;
+}
+
 .list {
   list-style: none;
 }
 
 .interest__title {
-  font-size: 20px;
-  line-height: 30px;
-  color: $secondary-color-text;
-  font-family: $font-MontserratAlternates-ExtraBold;
+  @extend %title-h2;
   margin-bottom: 24px;
   margin-top: 34px;
   text-align: left;
@@ -26,10 +27,19 @@
 }
 
 .interest-container {
+  position: relative;
   background-repeat: no-repeat;
-  background-image: url(../images/map-gray.png);
-  background-position: right bottom 100px;
-  margin-bottom: 54px;
+
+  &::before {
+    @include psevdo($display: block);
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    bottom: 105px;
+    width: 272px;
+    height: 193px;
+    background-image: url(../images/map-gray.png);
+  }
 }
 
 .interest__list {
@@ -51,7 +61,7 @@
 .interest__item-info {
   font-size: 14px;
   line-height: 20px;
-  color: $secondary-color-text;
+  color: $primary-color-text;
   font-family: $font-MontserratAlternates-Regular;
 }
 
@@ -60,13 +70,14 @@
   line-height: 20px;
   color: $secondary-color-text;
   font-family: $font-MontserratAlternates-Bold;
+  margin-left: 17px;
   margin-bottom: 24px;
 }
 
 .interest-compare__list {
   display: flex;
   justify-content: space-between;
-  padding-left: 17px;
+  margin-left: 17px;
   margin-bottom: 30px;
 }
 
@@ -90,10 +101,7 @@
 }
 
 .offer__title {
-  font-size: 20px;
-  line-height: 30px;
-  color: $secondary-color-text;
-  font-family: $font-MontserratAlternates-ExtraBold;
+  @extend %title-h2;
   margin-bottom: 16px;
 }
 

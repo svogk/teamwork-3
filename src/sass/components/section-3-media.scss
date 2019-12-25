@@ -4,8 +4,6 @@
   }
 
   .interest__title {
-    font-size: 30px;
-    line-height: 40px;
     margin-bottom: 36px;
     margin-top: 48px;
     text-align: center;
@@ -41,10 +39,15 @@
   }
 
   .interest-container {
-    background-image: url(../images/map.png);
-    background-position: bottom 100px right 15px;
-    max-width: 600px;
+    max-width: 590px;
     margin: 0 auto;
+
+    &::before {
+      right: 25px;
+      bottom: 90px;
+      width: 311px;
+      background-image: url(../images/map.png);
+    }
   }
 
   .interest__item:nth-last-child(-n + 3) {
@@ -55,15 +58,18 @@
     max-width: 250px;
   }
 
+  .interest-compare__desr {
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+
   .interest-compare__list {
     padding-bottom: 55px;
     margin-bottom: 0px;
-    padding-left: 0;
+    margin-left: 0;
   }
 
   .offer__title {
-    font-size: 30px;
-    line-height: 40px;
     margin-bottom: 30px;
     text-align: center;
     padding-top: 50px;
@@ -71,6 +77,7 @@
 
   .offer__list {
     width: 510px;
+    margin-left: 40px;
     margin-bottom: 44px;
   }
 
@@ -78,7 +85,6 @@
     position: relative;
     font-size: 16px;
     line-height: 22px;
-    margin-left: 40px;
     margin-bottom: 20px;
   }
 }
@@ -98,8 +104,6 @@
 
   .interest__title {
     max-width: 480px;
-    font-size: 48px;
-    line-height: 60px;
     margin-bottom: 76px;
     margin-top: 90px;
     text-align: left;
@@ -119,8 +123,6 @@
   }
 
   .offer__title {
-    font-size: 48px;
-    line-height: 60px;
     margin-bottom: 26px;
     text-align: left;
     margin-left: 36px;
@@ -128,14 +130,14 @@
 }
 
 @media (min-resolution: 192dpi) and (min-width: 768px) {
-  .interest-container {
+  .interest-container::before {
     background-size: 312px 193px;
     background-image: url(../images/map@2x.png);
   }
 }
 
 @media (min-resolution: 192dpi) and (max-width: 767px) {
-  .interest-container {
+  .interest-container::before {
     background-size: 272px 193px;
     background-image: url(../images/map-gray@2x.png);
   }
