@@ -4,11 +4,8 @@
 
   &__title {
     width: 180px;
-    font-size: 20px;
-    letter-spacing: -1px;
-    line-height: 30px;
+    @extend %title-h2;
     color: $secondary-color-text;
-    font-family: $font-MontserratAlternates-Bold;
     margin-left: 33px;
     margin-bottom: 32px;
   }
@@ -165,6 +162,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  &__img-link{
+    cursor: pointer;
+  }
+
 }
 
 @media (min-width: 768px) {

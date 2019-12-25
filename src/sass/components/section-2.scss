@@ -6,11 +6,7 @@
   &__title {
     width: 240px;
     margin: 0 auto 34px;
-    font-size: 20px;
-    letter-spacing: -1px;
-    line-height: 30px;
-    color: $primary-color-text;
-    font-family: $font-Montserrat-Bold;
+    @extend %title-h2;
     text-align: center;
   }
 
@@ -88,6 +84,7 @@
     color: $color-text-white;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
   }
 }
 
