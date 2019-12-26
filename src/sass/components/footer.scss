@@ -1,5 +1,5 @@
 .page-footer {
-  &__bg {  
+    &__bg {
     background-image: url('../images/students.png'), url('../images/stars.png');  
     background-color: $background-color-header;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   }
 
   &__link {
-    padding-top: 60px;
+    margin-top: 60px;
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid $color-text_background;
@@ -24,6 +24,11 @@
     line-height: 22px;
     font-family: $font-MontserratAlternates-ExtraBold;
     color: $color-text_background;
+  }
+
+  &__link:hover {
+    border-bottom: 1px solid $background-color-btn_form;
+    color: $background-color-btn_form;
   }
 
   &__descr {
@@ -53,9 +58,14 @@
     }
 
     &__link {
-      padding-top: 96px;
+      margin-top: 96px;
       font-size: 30px;
       line-height: 46px;
+    }
+
+    &__link:hover {
+      border-bottom: 2px solid $background-color-btn_form;
+      color: $background-color-btn_form;
     }
 
     &__descr {
@@ -80,10 +90,9 @@
 @media screen and (min-width: 1200px) {
   .page-footer {
     &__link {
-      padding-top: 254px;
+      margin-top: 254px;
       font-size: 60px;
       line-height: 70px;
-      border-bottom: 2px solid $color-text_background;
     }
 
     &__container {
