@@ -77,9 +77,7 @@
     height: 106px;
     -webkit-filter: drop-shadow(0px 2px 5px rgba(255, 107, 8, 0));
     filter: drop-shadow(0px 2px 5px rgba(255, 107, 8, 0));
-    -webkit-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
+    @extend %btn-shadow;
     background-color: $background-color-btn;
     border: 1px solid $background-color-btn;
     font-family: $font-Montserrat-Bold;
@@ -95,12 +93,7 @@
 .career__btn:hover {
   -webkit-filter: drop-shadow(0px 2px 5px rgba(255, 107, 8, 0.59));
   filter: drop-shadow(0px 2px 5px rgba(255, 107, 8, 0.59));
-  -webkit-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+  @extend %btn-hover;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
