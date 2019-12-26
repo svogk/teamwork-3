@@ -122,7 +122,7 @@ input {
   }
 }
 
-a:hover {
+.form__btm a:hover {
   color: $background-color-btn_form;
   transition-duration: 200ms;
   transition-timing-function: linear;
