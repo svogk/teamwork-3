@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.interest-offer.container {
+  width: 260px;
+}
+
+.list {
+  list-style: none;
+}
+
+.interest__title {
+  @extend %title-h2;
+  margin-bottom: 24px;
+  margin-top: 34px;
+  text-align: left;
+}
+
+.interest__descr {
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color-text;
+  font-family: $font-MontserratAlternates-ExtraBold;
+  margin-bottom: 26px;
+}
+
+
+.interest-container {
+  position: relative;
+  background-repeat: no-repeat;
+
+  &::before {
+    @include psevdo($display: block);
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    bottom: 70px;
+    width: 272px;
+    height: 193px;
+    background-image: url(../images/map-gray.png);
+  }
+}
+
+.interest__list {
+  margin-left: 17px;
+  margin-bottom: 20px;
+}
+
+.interest__item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.interest__item-value {
+  font-size: 30px;
+  line-height: 25px;
+  color: $color-text_background;
+  font-family: $font-MontserratAlternates-Bold;
+  margin-bottom: 12px;
+}
+
+.interest__item-info {
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-color-text;
+  font-family: $font-MontserratAlternates-Regular;
+}
+
+.interest-compare__desr {
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color-text;
+  font-family: $font-MontserratAlternates-Bold;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+.interest-compare__list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 17px;
+  margin-bottom: 30px;
+}
+
+.interest-compare__item {
+  max-width: 116px;
+}
+
+.interest-compare__item-value {
+  font-size: 25px;
+  line-height: 25px;
+  color: $color-text_background;
+  font-family: $font-MontserratAlternates-Bold;
+  margin-bottom: 8px;
+}
+
+.interest-compare__item-info {
+  font-size: 10px;
+  line-height: 11px;
+  color: $primary-color-text;
+  font-family: $font-MontserratAlternates-Regular;
+}
+
+.offer__title {
+  @extend %title-h2;
+  margin-bottom: 16px;
+}
+
+.offer__list {
+  margin-bottom: 34px;
+}
+
+.offer__item {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color-text;
+  font-family: $font-MontserratAlternates-Regular;
+  padding-left: 36px;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    @include psevdo($display: block);
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: $color-text_background;
+  }
+}
