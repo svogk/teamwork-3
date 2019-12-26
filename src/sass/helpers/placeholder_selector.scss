@@ -2,3 +2,12 @@
   width: 220px;
   height: 40px;
 }
+
+%btn-hover {
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+%btn-shadow {
+  transition-duration: 200ms;
+}
