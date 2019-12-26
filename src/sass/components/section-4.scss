@@ -18,11 +18,6 @@
     width: 260px;
 }
 
-.way__title {
-    line-height: 24px;
-    font-size: 20px;
-}
-
 .way__descr {
     color: $color-text-white;
     font: 16px $font-MontserratAlternates-ExtraBold;
@@ -38,32 +33,9 @@
     justify-content: space-around;
     margin-right: 62px;
 }
-    
-.right-part {
-    width: 280px;
-    font: 14px $font-MontserratAlternates-Regular;
-    letter-spacing: -1px;
-    color: $color-text-white;
-}
-
-.way__descr {
-    color: $color-text-white;
-    font: 20px $font-MontserratAlternates-Medium; 
-    font-weight: 500;
-    margin-bottom: 24px;
-    width: 54%;
-    padding: 0 0 0 149px;
-}
 
 .left-part {
     margin-right: 62px;
-}
-
-.left-part{
-    width: 530px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .right-part {
@@ -96,10 +68,8 @@
     span {
         font-weight: bold;
         font-family: $font-MontserratAlternates-Bold;
-    span {
-        font-weight: bold;
-        font-family: $font-MontserratAlternates-Bold;
     }
+        
 }
 
 .way__title {
@@ -134,21 +104,21 @@
     }
 
     .way__descr {
-    font-size: 20px;
-    color: $color-text_background;
-    font: 38px $font-MontserratAlternates-ExtraBold; 
-    font-weight: 800;
-    margin-bottom: 26px;
-    line-height: 40px;
+        font-size: 20px;
+        color: $color-text_background;
+        font: 38px $font-MontserratAlternates-ExtraBold; 
+        font-weight: 800;
+        margin-bottom: 26px;
+        line-height: 40px;
     }
 
     .way__btn {
-        background-color: $background-color-btn_form;
-        border: none;
-        font-family: $font-MontserratAlternates-Bold;
-        color: $color-text-white;
-        text-decoration: none;
-        text-transform: uppercase;
+        // background-color: $background-color-btn_form;
+        // border: none;
+        // font-family: $font-MontserratAlternates-Bold;
+        // color: $color-text-white;
+        // text-decoration: none;
+        // text-transform: uppercase;
         font-size: 18px;
         width: 548px;
         height: 88px;
@@ -220,4 +190,3 @@
             margin-top: 10px;
         }
     }
-}
