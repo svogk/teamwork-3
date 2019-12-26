@@ -111,8 +111,8 @@
     position: absolute;
     display: block;
     content: '';
-    width: 150px;
-    height: 130px;
+    width: 144px;
+    height: 122px;
     background: url('../images/world.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -509,6 +509,7 @@
 
 @media (min-resolution: 192dpi) {
   .go-for-it::before {
-    background: url('../images/world@2x.png');    
+    background: url('../images/world@2x.png'); 
+    background-size: 144px 122px;
   }
 }
