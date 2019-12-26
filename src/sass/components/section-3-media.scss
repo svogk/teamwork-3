@@ -44,7 +44,7 @@
 
     &::before {
       right: 25px;
-      bottom: 90px;
+      bottom: 56px;
       width: 311px;
       background-image: url(../images/map.png);
     }
@@ -64,7 +64,7 @@
   }
 
   .interest-compare__list {
-    padding-bottom: 55px;
+    padding-bottom: 56px;
     margin-bottom: 0px;
     margin-left: 0;
   }
@@ -94,7 +94,7 @@
     width: 1170px;
   }
 
-  .box {
+  .box-interest-offer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -110,10 +110,12 @@
   }
 
   .offer {
-    width: 455px;
+    width: 445px;
   }
 
   .offer__list {
+    width: 405px;
+    margin-left: 40px;
     margin-bottom: 0;
   }
 
@@ -126,6 +128,7 @@
     margin-bottom: 26px;
     text-align: left;
     margin-left: 36px;
+    padding-top: 0;
   }
 }
 
