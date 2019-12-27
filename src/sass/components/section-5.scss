@@ -509,6 +509,7 @@
 
 @media (min-resolution: 192dpi) {
   .go-for-it::before {
-    background: url('../images/world@2x.png');    
+    background: url('../images/world@2x.png'); 
+    background-size: 144px 122px;   
   }
 }
